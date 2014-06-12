@@ -3,13 +3,13 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_google_adwords'
   s.version     = '2.0.7'
-  s.summary     = 'TODO: Add gem summary here'
-  s.description = 'TODO: Add (optional) gem description here'
+  s.summary     = 'Spree Google Adwords extension'
+  s.description = 'Spree extension that creates and manages custom adwords ad campaigns.'
   s.required_ruby_version = '>= 1.9.3'
+  s.authors     = ['Kyle Van Wagenen']
+  s.homepage    = 'http://github.com/kvanwagenen/spree_google_adwords'
 
-  # s.author    = 'You'
   # s.email     = 'you@example.com'
-  # s.homepage  = 'http://www.spreecommerce.com'
 
   #s.files       = `git ls-files`.split("\n")
   #s.test_files  = `git ls-files -- {test,spec,features}/*`.split("\n")
@@ -17,6 +17,8 @@ Gem::Specification.new do |s|
   s.requirements << 'none'
 
   s.add_dependency 'spree_core', '~> 2.0.7'
+  s.add_dependency 'google-adwords-api', '0.12.0'
+  s.add_dependency 'oauth2', '0.9.3'
 
   s.add_development_dependency 'capybara', '~> 2.1'
   s.add_development_dependency 'coffee-rails'

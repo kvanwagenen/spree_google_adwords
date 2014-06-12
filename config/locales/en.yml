@@ -1,5 +1,8 @@
-# Sample localization file for English. Add more files in this directory for other locales.
-# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
-
 en:
-  hello: "Hello world"
+  google_adwords:
+    oauth2_client_id: "OAuth2 Client ID"
+    oauth2_client_secret: "OAuth2 Client Secret"
+    developer_token: "Developer Token"
+    user_agent: "User Agent"
+    environment: "Environment"
+

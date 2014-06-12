@@ -1,0 +1,13 @@
+<h1><%= t("google_adwords.settings") %></h1>
+
+<table>
+  <% [:oauth2_client_id, :oauth2_client_secret, :developer_token, :user_agent, :environment].each do |setting| %>
+    <%= adwords_setting_presentation_row(setting) %>
+  <% end %>
+</table>
+
+<p>
+  <%= link_to_with_icon 'edit', Spree.t("edit"), edit_admin_google_adwords_settings_path %>
+</p>
+
+
